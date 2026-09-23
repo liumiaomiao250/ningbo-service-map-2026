@@ -1,0 +1,22 @@
+{
+  "name": "ningbo-real-estate-service-map",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "dev:lan": "vite --host 0.0.0.0",
+    "qr": "node ./scripts/make-qr.mjs",
+    "poster": "node ./scripts/make-poster.mjs",
+    "geocode": "node ./scripts/geocode-points.mjs",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "vite": "^6.1.0"
+  }
+}
